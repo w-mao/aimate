@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+<body>
+
+{% include "mymenu.html" with me="mao" sponsor="no one" %}
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<h1>Hello {{ firstname }}, how are you?</h1>
+
+<p>This page is used for testing.</p>
+
+{% for x in mymembers %}
+<li>{{ x.firstname }}</li>
+{% endfor %}
+
+</body>
+</html>
