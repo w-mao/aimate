@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-$o^(^p0$y62smza2j0!^@pfhbb7c6@tlvdouub86ieiam04a#u
 DEBUG = True
 #DEBUG = False
 
-ALLOWED_HOSTS =[]
-#ALLOWED_HOSTS = [m3vie.com]
+#ALLOWED_HOSTS =[]
+ALLOWED_HOSTS = ['m3vie.com', '3.99.174.90', 'localhost', '127.0.0.1']
 
 
 # Application definition
