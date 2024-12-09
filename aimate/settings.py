@@ -27,7 +27,7 @@ DEBUG = True
 #DEBUG = False
 
 #ALLOWED_HOSTS =[]
-ALLOWED_HOSTS = ['m3vie.com', '3.99.174.90', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['m3vie.com', '3.99.174.90', '35.182.71.92', 'localhost', '127.0.0.1']
 
 
 # Application definition
