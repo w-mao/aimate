@@ -133,17 +133,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-
-if DEBUG == False: # production
-    STATIC_ROOT = '/var/www/html/static'
-    MEDIA_ROOT ='/var/www/html/mdeia'
-else:
-    STATICFILES_DIRS = [BASE_DIR / 'static',]
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    
 STATIC_URL = '/static/'    
 MEDIA_URL = '/media/'
 
+if DEBUG == False: # production
+    STATIC_ROOT = os.path.join(BASE_DIR.parent, 'html/static')
+    MEDIA_ROOT = os.path.join(BASE_DIR.parent, 'html/media')
+else:
+    STATICFILES_DIRS = [BASE_DIR.parent / 'html/static',]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
 #STORAGES = {
 #    'static': {
 #        'BACKEND': 'whitenoise.storage.CompressedManifestStaticFilesStorage',
