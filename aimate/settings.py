@@ -25,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$o^(^p0$y62smza2j0!^@pfhbb7c6@tlvdouub86ieiam04a#u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 #ALLOWED_HOSTS =[]
 ALLOWED_HOSTS = ['m3vie.com', '3.99.174.90', '35.182.71.92', 'localhost', '127.0.0.1']
@@ -137,12 +137,15 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 if DEBUG == False: # production
-    STATIC_ROOT = os.path.join(BASE_DIR.parent, 'html/static')
-    MEDIA_ROOT = os.path.join(BASE_DIR.parent, 'html/media')
+    STATIC_ROOT = os.path.join(BASE_DIR.parent, 'aimate_assets/static')
+    MEDIA_ROOT = os.path.join(BASE_DIR.parent, 'aimate_assets/media')
+    
 else:
-    STATICFILES_DIRS = [BASE_DIR.parent / 'html/static',]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    STATIC_ROOT = BASE_DIR / 'productionfiles'
+    STATICFILES_DIRS = [
+        BASE_DIR / 'assets'
+    ]
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'assets/media')
     
 #STORAGES = {
 #    'static': {
