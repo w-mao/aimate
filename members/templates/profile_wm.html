@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<title>Mao's Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.mao-IT-blue,.mao-hover-IT-blue:hover{color:#fff!important;background-color:#4B709D!important}
+.mao-text-IT-blue,.mao-hover-text-IT-blue:hover{color:#4B709D!important}
+.mao-image-margin {  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+  margin-left: 0px;}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar mao-IT-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  	<img src="/media/images/profile.png" style="width:100%" alt="Avatar">
+    <!--<h3 class="w3-padding-64"><b>Mao's<br>Home Page</b></h3>-->
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Home</a> 
+    <!--<a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Showcase</a> -->
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Teaching</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Research</a> 
+    <!--<a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Packages</a> -->
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large mao-IT-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button mao-IT-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Mao's Home Page</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge"><b>Mao's Home Page</b></h1>
+    <!--<h1 class="w3-xxlarge w3-text-indigo"><b>Showcase.</b></h1>-->
+    <!--<hr style="width:50px;border:5px solid red" class="w3-round">-->
+    <p>Department of Computer Science</p>
+    <p>Memorial University of Newfoundland</p>
+    <p>St. John's, NL, Canada &nbsp A1B 3X5</p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <!--<div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>-->
+
+  <!-- Modal for full size images on click-->
+  <!--<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>-->
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxlarge mao-text-IT-blue"><b>Teaching</b></h1>
+
+
+    <!--<hr style="width:50px;border:5px solid blue" class="w3-round">-->
+    <!--<hr style="width:50px;border:5px solid #4B709D" class="w3-round">-->
+    <!--<p>Course: BUSI	3700</p>
+    <p><a href="http://catalogue.pearsoned.ca/educator/product/MyLab-MIS-with-Pearson-eText-Standalone-Access-Card-for-Experiencing-MIS-Fifth-Canadian-Edition/9780134861593.page">Information Systems</a></p> -->
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="mao-IT-blue w3-xlarge w3-padding-32">BUSI 3700</li>
+        <li class="w3-padding-16">Information Systems</li>
+        <li class="w3-padding-16">2019-2020 Fall</li>
+        <li class="w3-padding-16">Business Administration</li>
+        <li class="w3-padding-16">BN 1010</li>
+        <li class="w3-padding-16">TR 12:30 pm-01:45 pm</li>
+        <!--<li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>-->
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button mao-IT-blue w3-padding-large w3-hover-black" onclick="location.href='http://catalogue.pearsoned.ca/educator/product/MyLab-MIS-with-Pearson-eText-Standalone-Access-Card-for-Experiencing-MIS-Fifth-Canadian-Edition/9780134861593.page'">Learn More</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Courses (Tentative)</li>
+        <li class="w3-padding-16">TBA</li>
+        <li class="w3-padding-16">2019-2020 Winter</li>
+        <li class="w3-padding-16">TBA</li>
+        <li class="w3-padding-16">TBA</li>
+        <li class="w3-padding-16">TBA</li>
+        <!--<li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>-->
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="location.href='http://www.mun.ca'">Learn More</button>
+        </li>
+      </ul>
+    </div>
+   	<div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Previous Courses</li>
+        <li class="w3-padding-16">-</li>
+        <li class="w3-padding-16">-</li>
+        <li class="w3-padding-16">-</li>
+        <li class="w3-padding-16">-</li>
+        <li class="w3-padding-16">-</li>
+        <!--<li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>-->
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="location.href='http://www.mun.ca'">Learn More</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxlarge mao-text-IT-blue"><b>Research</b></h1>
+    <!--<hr style="width:50px;border:5px solid red" class="w3-round">-->
+    <!--<p>The best team in the world.</p>-->
+    <p>Exploring approaches using deep neural networks to solve classical problems in computer vision and computer graphics. </p>
+    <!--<p><b>Our designers are thoughtfully chosen</b>:</p>-->
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col w3-third w3-margin-bottom">
+      <div class="w3-light-grey" style="height:360px; padding-left:15px">
+        <img src="/media/images/mvs01.png" align="top" class="mao-image-margin" alt="mao" style="width: 50%">
+        <!--<div class="w3-container">-->
+          <h3>CAIP 2019</h3>
+          <!--<p class="w3-opacity">CEO & Founder</p>-->
+          <p><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-29888-3_52">A Global-Matching Framework for Multi-View Stereopsis.</a></p>
+        <!--</div>-->
+      </div>
+    </div>
+
+    <div class="w3-col w3-third w3-margin-bottom">
+      <div class="w3-light-grey" style="height:360px; padding-left:15px">
+        <img src="/media/images/stereo02.png" align="top" class="mao-image-margin" alt="mao" style="width: 50%">
+        <!--<div class="w3-container">-->
+          <h3>WACV 2019</h3>
+          <!--<p class="w3-opacity">CEO & Founder</p>-->
+          <p><a href="https://ieeexplore.ieee.org/document/8659297">Semi-Dense Stereo Matching Using Dual CNNs.</a></p>
+        <!--</div>-->
+      </div>
+
+    </div>
+
+    <div class="w3-col w3-third w3-margin-bottom">
+      <div class="w3-light-grey" style="height:360px; padding-left:15px">
+        <img src="/media/images/stereo01.png" align="top" class="mao-image-margin" alt="mao" style="width: 50%">
+        <!--<div class="w3-container">-->
+          <h3>More</h3>
+          <!--<p class="w3-opacity">CEO & Founder</p>-->
+          <p><a href="https://dblp.org/pers/hd/m/Mao:Wendong">DBLP Link</a></p>
+        <!--</div>-->
+      </div>
+
+    </div>
+    <!--<div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>-->
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxlarge mao-text-IT-blue"><b>Contact</b></h1>
+    <p>Email: wm0330@mun.ca</p>
+    <p>Office: EN 2018B</p>
+    <p>Updated on September 23, 2019</p>
+    <p>Thanks for visiting!</p>
+    <!--<form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>-->
+      <!--<button type="submit" class="w3-button w3-block w3-padding-large mao-IT-blue w3-margin-bottom">Send Message</button>-->
+      <hr style="width:100px; margin-top: 100px; margin-bottom: 50px; border:5px solid #4B709D" class="w3-round">
+    </form> 
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<!--<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>-->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

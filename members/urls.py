@@ -10,5 +10,6 @@ urlpatterns = [
     path("", TemplateView.as_view(template_name="home.html"), name="home"),  # new
     path('members/', views.members, name='members'),
     path('members/details/<int:id>', views.details, name='details'),
+    path('mao/', views.profile, name='profile'),
     path('testing/', views.testing, name='testing'),
 ]

@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+<link rel="stylesheet" href="{% static 'core/global.css' %}">
 <body>
 
 {% include "mymenu.html" with me="mao" sponsor="no one" %}
@@ -17,6 +17,11 @@
 {% for x in mymembers %}
 <li>{{ x.firstname }}</li>
 {% endfor %}
+
+
+<input type="text">
+<br>
+<input type="text" name="myname">
 
 </body>
 </html>
