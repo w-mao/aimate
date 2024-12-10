@@ -12,6 +12,10 @@ body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 
+.mao-button{margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;}
 .mao-IT-blue,.mao-hover-IT-blue:hover{color:#fff!important;background-color:#4B709D!important}
 .mao-text-IT-blue,.mao-hover-text-IT-blue:hover{color:#4B709D!important}
 .mao-image-margin {  
@@ -24,9 +28,9 @@ body {font-size:16px;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar mao-IT-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%">Close Menu</a>
   <div class="w3-container">
-  	<img src="/media/images/profile.png" style="width:100%" alt="Avatar">
+  	<img src="/media/images/profile.png" style="width:100%; margin:5px 0px 0px 0px" alt="Avatar">
     <!--<h3 class="w3-padding-64"><b>Mao's<br>Home Page</b></h3>-->
   </div>
   <div class="w3-bar-block">
@@ -41,8 +45,8 @@ body {font-size:16px;}
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large mao-IT-blue w3-large w3-padding">
-  <a href="javascript:void(0)" class="w3-button mao-IT-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Home</span>
+  <a href="javascript:void(0)" class="mao-button mao-IT-blue w3-margin-right" onclick="w3_open()", style="text-decoration:none">☰</a>
+  <!--<span>Home</span>-->
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
